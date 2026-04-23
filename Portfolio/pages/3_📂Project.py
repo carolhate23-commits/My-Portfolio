@@ -1,15 +1,17 @@
 import streamlit as st
+
 st.markdown("""
 <style>
 [data-testid="stSidebar"] {
-    background-color: green;
+    background-color:pink;
 }
 [data-testid="stSidebar"] * {
-    color: white;
+    color: black;
 }
 .stApp {
-   background-color: aliceblue;
-}   
+   background-color: lightblue;
+}  
+ 
 .main {
     text-align: center;
 }
@@ -33,13 +35,15 @@ img {
 </style>
 """, unsafe_allow_html=True)
 
-st.title(" 📂 :orange[My Projects]")
+
+
+st.title(" 📂:green[My Projects]")
 
 projects = {
-    "Simple Calculator": "A basic calculator that can do addition,subtraction, multiplication,division, and modulo.",
-    "Personal Site(HTML)": "The website is design to be simple and easy to navigate.It shows my skill,Experiences, and Interest.",
-    "Database": "Boarding house management system"
+    "Personal site": "personal website that showcases my skills,experience,and interests.simple and easy to navigate.",
+    "Database": "Boarding house management system.",
 }
 for name, desc in projects.items():
     with st.expander(name):
-      st.write(desc)
+       st.write(desc)
+
