@@ -3,14 +3,15 @@ import streamlit as st
 st.markdown("""
 <style>
 [data-testid="stSidebar"] {
-    background-color: green;
+    background-color:pink;
 }
 [data-testid="stSidebar"] * {
-    color: white;
+    color: black;
 }
+
 .stApp {
-   background-color: aliceblue;
-}   
+   background-color: lightblue;
+}  
 .main {
     text-align: center;
 }
@@ -34,19 +35,24 @@ img {
 </style>
 """, unsafe_allow_html=True)
 
-st.title(" 🛠️ :orange[Skills]")
-st.subheader("Programming")
-st.progress(50)
-st.write(" Basic Python")
 
-st.subheader("Web Development")
-st.progress(60)
-st.write("Basic HTML/CSS")
 
-st.subheader("  Design")
+st.title("🛠️:green[Skills]")
+st.subheader(":red[Programming]")
 st.progress(70)
+st.write("Python")
+
+st.progress(70)
+st.write("JavaScript")
+
+st.subheader(":red[Web development]")
+st.progress(75)
+st.write("HTML/CSS")
+
+st.subheader(":red[Design]")
+st.progress(75)
 st.write("Canva / UI Design")
-st.subheader("  Tools")
+st.subheader(":red[Tools]")
 st.write("- GitHub")
 st.write("- VS Code")
 st.write("- Streamlit")
